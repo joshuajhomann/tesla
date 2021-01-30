@@ -1,0 +1,930 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		034D39DF25C50F3000574836 /* telsaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034D39DE25C50F3000574836 /* telsaApp.swift */; };
+		034D39E125C50F3000574836 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034D39E025C50F3000574836 /* ContentView.swift */; };
+		034D39E325C50F3100574836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 034D39E225C50F3100574836 /* Assets.xcassets */; };
+		034D39E625C50F3100574836 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 034D39E525C50F3100574836 /* Preview Assets.xcassets */; };
+		034D39F125C50F3100574836 /* telsaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034D39F025C50F3100574836 /* telsaTests.swift */; };
+		034D39FC25C50F3100574836 /* telsaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034D39FB25C50F3100574836 /* telsaUITests.swift */; };
+		034D3A0125C50F3100574836 /* telsa WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 034D3A0025C50F3100574836 /* telsa WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		034D3A0625C50F3100574836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 034D3A0525C50F3100574836 /* Assets.xcassets */; };
+		034D3A0D25C50F3100574836 /* telsa WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 034D3A0C25C50F3100574836 /* telsa WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		034D3A1225C50F3100574836 /* telsaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034D3A1125C50F3100574836 /* telsaApp.swift */; };
+		034D3A1425C50F3100574836 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034D3A1325C50F3100574836 /* ContentView.swift */; };
+		034D3A1625C50F3100574836 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034D3A1525C50F3100574836 /* NotificationController.swift */; };
+		034D3A1825C50F3100574836 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034D3A1725C50F3100574836 /* NotificationView.swift */; };
+		034D3A1A25C50F3100574836 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034D3A1925C50F3100574836 /* ComplicationController.swift */; };
+		034D3A1C25C50F3200574836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 034D3A1B25C50F3200574836 /* Assets.xcassets */; };
+		034D3A1F25C50F3200574836 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 034D3A1E25C50F3200574836 /* Preview Assets.xcassets */; };
+		034D3A4325C50FB100574836 /* TeslaUI in Frameworks */ = {isa = PBXBuildFile; productRef = 034D3A4225C50FB100574836 /* TeslaUI */; };
+		034D3A6825C5112000574836 /* TeslaUI in Frameworks */ = {isa = PBXBuildFile; productRef = 034D3A6725C5112000574836 /* TeslaUI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		034D39ED25C50F3100574836 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 034D39D325C50F3000574836 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 034D39DA25C50F3000574836;
+			remoteInfo = telsa;
+		};
+		034D39F825C50F3100574836 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 034D39D325C50F3000574836 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 034D39DA25C50F3000574836;
+			remoteInfo = telsa;
+		};
+		034D3A0225C50F3100574836 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 034D39D325C50F3000574836 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 034D39FF25C50F3100574836;
+			remoteInfo = "telsa WatchKit App";
+		};
+		034D3A0E25C50F3100574836 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 034D39D325C50F3000574836 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 034D3A0B25C50F3100574836;
+			remoteInfo = "telsa WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		034D3A2725C50F3200574836 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				034D3A0D25C50F3100574836 /* telsa WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		034D3A2B25C50F3200574836 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				034D3A0125C50F3100574836 /* telsa WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		034D39DB25C50F3000574836 /* telsa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = telsa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		034D39DE25C50F3000574836 /* telsaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = telsaApp.swift; sourceTree = "<group>"; };
+		034D39E025C50F3000574836 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		034D39E225C50F3100574836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		034D39E525C50F3100574836 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		034D39E725C50F3100574836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		034D39EC25C50F3100574836 /* telsaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = telsaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		034D39F025C50F3100574836 /* telsaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = telsaTests.swift; sourceTree = "<group>"; };
+		034D39F225C50F3100574836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		034D39F725C50F3100574836 /* telsaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = telsaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		034D39FB25C50F3100574836 /* telsaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = telsaUITests.swift; sourceTree = "<group>"; };
+		034D39FD25C50F3100574836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		034D3A0025C50F3100574836 /* telsa WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "telsa WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		034D3A0525C50F3100574836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		034D3A0725C50F3100574836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		034D3A0C25C50F3100574836 /* telsa WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "telsa WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		034D3A1125C50F3100574836 /* telsaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = telsaApp.swift; sourceTree = "<group>"; };
+		034D3A1325C50F3100574836 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		034D3A1525C50F3100574836 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		034D3A1725C50F3100574836 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		034D3A1925C50F3100574836 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		034D3A1B25C50F3200574836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		034D3A1E25C50F3200574836 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		034D3A2025C50F3200574836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		034D3A2125C50F3200574836 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		034D3A3A25C50F6000574836 /* TeslaUI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TeslaUI; sourceTree = "<group>"; };
+		034D3A3B25C50F6000574836 /* TeslaOwnerAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TeslaOwnerAPI; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		034D39D825C50F3000574836 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034D3A4325C50FB100574836 /* TeslaUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		034D39E925C50F3100574836 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		034D39F425C50F3100574836 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		034D3A0925C50F3100574836 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034D3A6825C5112000574836 /* TeslaUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034D39D225C50F3000574836 = {
+			isa = PBXGroup;
+			children = (
+				034D3A3B25C50F6000574836 /* TeslaOwnerAPI */,
+				034D3A3A25C50F6000574836 /* TeslaUI */,
+				034D39DD25C50F3000574836 /* telsa */,
+				034D39EF25C50F3100574836 /* telsaTests */,
+				034D39FA25C50F3100574836 /* telsaUITests */,
+				034D3A0425C50F3100574836 /* telsa WatchKit App */,
+				034D3A1025C50F3100574836 /* telsa WatchKit Extension */,
+				034D39DC25C50F3000574836 /* Products */,
+				034D3A4125C50FB100574836 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		034D39DC25C50F3000574836 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				034D39DB25C50F3000574836 /* telsa.app */,
+				034D39EC25C50F3100574836 /* telsaTests.xctest */,
+				034D39F725C50F3100574836 /* telsaUITests.xctest */,
+				034D3A0025C50F3100574836 /* telsa WatchKit App.app */,
+				034D3A0C25C50F3100574836 /* telsa WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		034D39DD25C50F3000574836 /* telsa */ = {
+			isa = PBXGroup;
+			children = (
+				034D39DE25C50F3000574836 /* telsaApp.swift */,
+				034D39E025C50F3000574836 /* ContentView.swift */,
+				034D39E225C50F3100574836 /* Assets.xcassets */,
+				034D39E725C50F3100574836 /* Info.plist */,
+				034D39E425C50F3100574836 /* Preview Content */,
+			);
+			path = telsa;
+			sourceTree = "<group>";
+		};
+		034D39E425C50F3100574836 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				034D39E525C50F3100574836 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		034D39EF25C50F3100574836 /* telsaTests */ = {
+			isa = PBXGroup;
+			children = (
+				034D39F025C50F3100574836 /* telsaTests.swift */,
+				034D39F225C50F3100574836 /* Info.plist */,
+			);
+			path = telsaTests;
+			sourceTree = "<group>";
+		};
+		034D39FA25C50F3100574836 /* telsaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				034D39FB25C50F3100574836 /* telsaUITests.swift */,
+				034D39FD25C50F3100574836 /* Info.plist */,
+			);
+			path = telsaUITests;
+			sourceTree = "<group>";
+		};
+		034D3A0425C50F3100574836 /* telsa WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				034D3A0525C50F3100574836 /* Assets.xcassets */,
+				034D3A0725C50F3100574836 /* Info.plist */,
+			);
+			path = "telsa WatchKit App";
+			sourceTree = "<group>";
+		};
+		034D3A1025C50F3100574836 /* telsa WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				034D3A1125C50F3100574836 /* telsaApp.swift */,
+				034D3A1325C50F3100574836 /* ContentView.swift */,
+				034D3A1525C50F3100574836 /* NotificationController.swift */,
+				034D3A1725C50F3100574836 /* NotificationView.swift */,
+				034D3A1925C50F3100574836 /* ComplicationController.swift */,
+				034D3A1B25C50F3200574836 /* Assets.xcassets */,
+				034D3A2025C50F3200574836 /* Info.plist */,
+				034D3A2125C50F3200574836 /* PushNotificationPayload.apns */,
+				034D3A1D25C50F3200574836 /* Preview Content */,
+			);
+			path = "telsa WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		034D3A1D25C50F3200574836 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				034D3A1E25C50F3200574836 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		034D3A4125C50FB100574836 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		034D39DA25C50F3000574836 /* telsa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 034D3A2C25C50F3200574836 /* Build configuration list for PBXNativeTarget "telsa" */;
+			buildPhases = (
+				034D39D725C50F3000574836 /* Sources */,
+				034D39D825C50F3000574836 /* Frameworks */,
+				034D39D925C50F3000574836 /* Resources */,
+				034D3A2B25C50F3200574836 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				034D3A0325C50F3100574836 /* PBXTargetDependency */,
+			);
+			name = telsa;
+			packageProductDependencies = (
+				034D3A4225C50FB100574836 /* TeslaUI */,
+			);
+			productName = telsa;
+			productReference = 034D39DB25C50F3000574836 /* telsa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		034D39EB25C50F3100574836 /* telsaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 034D3A2F25C50F3200574836 /* Build configuration list for PBXNativeTarget "telsaTests" */;
+			buildPhases = (
+				034D39E825C50F3100574836 /* Sources */,
+				034D39E925C50F3100574836 /* Frameworks */,
+				034D39EA25C50F3100574836 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				034D39EE25C50F3100574836 /* PBXTargetDependency */,
+			);
+			name = telsaTests;
+			productName = telsaTests;
+			productReference = 034D39EC25C50F3100574836 /* telsaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		034D39F625C50F3100574836 /* telsaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 034D3A3225C50F3200574836 /* Build configuration list for PBXNativeTarget "telsaUITests" */;
+			buildPhases = (
+				034D39F325C50F3100574836 /* Sources */,
+				034D39F425C50F3100574836 /* Frameworks */,
+				034D39F525C50F3100574836 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				034D39F925C50F3100574836 /* PBXTargetDependency */,
+			);
+			name = telsaUITests;
+			productName = telsaUITests;
+			productReference = 034D39F725C50F3100574836 /* telsaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		034D39FF25C50F3100574836 /* telsa WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 034D3A2825C50F3200574836 /* Build configuration list for PBXNativeTarget "telsa WatchKit App" */;
+			buildPhases = (
+				034D39FE25C50F3100574836 /* Resources */,
+				034D3A2725C50F3200574836 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				034D3A0F25C50F3100574836 /* PBXTargetDependency */,
+			);
+			name = "telsa WatchKit App";
+			productName = "telsa WatchKit App";
+			productReference = 034D3A0025C50F3100574836 /* telsa WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		034D3A0B25C50F3100574836 /* telsa WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 034D3A2425C50F3200574836 /* Build configuration list for PBXNativeTarget "telsa WatchKit Extension" */;
+			buildPhases = (
+				034D3A0825C50F3100574836 /* Sources */,
+				034D3A0925C50F3100574836 /* Frameworks */,
+				034D3A0A25C50F3100574836 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "telsa WatchKit Extension";
+			packageProductDependencies = (
+				034D3A6725C5112000574836 /* TeslaUI */,
+			);
+			productName = "telsa WatchKit Extension";
+			productReference = 034D3A0C25C50F3100574836 /* telsa WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		034D39D325C50F3000574836 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					034D39DA25C50F3000574836 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					034D39EB25C50F3100574836 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 034D39DA25C50F3000574836;
+					};
+					034D39F625C50F3100574836 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 034D39DA25C50F3000574836;
+					};
+					034D39FF25C50F3100574836 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					034D3A0B25C50F3100574836 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 034D39D625C50F3000574836 /* Build configuration list for PBXProject "telsa" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 034D39D225C50F3000574836;
+			productRefGroup = 034D39DC25C50F3000574836 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				034D39DA25C50F3000574836 /* telsa */,
+				034D39EB25C50F3100574836 /* telsaTests */,
+				034D39F625C50F3100574836 /* telsaUITests */,
+				034D39FF25C50F3100574836 /* telsa WatchKit App */,
+				034D3A0B25C50F3100574836 /* telsa WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		034D39D925C50F3000574836 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034D39E625C50F3100574836 /* Preview Assets.xcassets in Resources */,
+				034D39E325C50F3100574836 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		034D39EA25C50F3100574836 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		034D39F525C50F3100574836 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		034D39FE25C50F3100574836 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034D3A0625C50F3100574836 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		034D3A0A25C50F3100574836 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034D3A1F25C50F3200574836 /* Preview Assets.xcassets in Resources */,
+				034D3A1C25C50F3200574836 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		034D39D725C50F3000574836 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034D39E125C50F3000574836 /* ContentView.swift in Sources */,
+				034D39DF25C50F3000574836 /* telsaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		034D39E825C50F3100574836 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034D39F125C50F3100574836 /* telsaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		034D39F325C50F3100574836 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034D39FC25C50F3100574836 /* telsaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		034D3A0825C50F3100574836 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034D3A1625C50F3100574836 /* NotificationController.swift in Sources */,
+				034D3A1425C50F3100574836 /* ContentView.swift in Sources */,
+				034D3A1A25C50F3100574836 /* ComplicationController.swift in Sources */,
+				034D3A1225C50F3100574836 /* telsaApp.swift in Sources */,
+				034D3A1825C50F3100574836 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		034D39EE25C50F3100574836 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 034D39DA25C50F3000574836 /* telsa */;
+			targetProxy = 034D39ED25C50F3100574836 /* PBXContainerItemProxy */;
+		};
+		034D39F925C50F3100574836 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 034D39DA25C50F3000574836 /* telsa */;
+			targetProxy = 034D39F825C50F3100574836 /* PBXContainerItemProxy */;
+		};
+		034D3A0325C50F3100574836 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 034D39FF25C50F3100574836 /* telsa WatchKit App */;
+			targetProxy = 034D3A0225C50F3100574836 /* PBXContainerItemProxy */;
+		};
+		034D3A0F25C50F3100574836 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 034D3A0B25C50F3100574836 /* telsa WatchKit Extension */;
+			targetProxy = 034D3A0E25C50F3100574836 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		034D3A2225C50F3200574836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		034D3A2325C50F3200574836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		034D3A2525C50F3200574836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "telsa\\ WatchKit\\ Extension/Preview\\ Content";
+				DEVELOPMENT_TEAM = NDC584AYVH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "telsa WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = homann.josh.telsa0.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		034D3A2625C50F3200574836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "telsa\\ WatchKit\\ Extension/Preview\\ Content";
+				DEVELOPMENT_TEAM = NDC584AYVH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "telsa WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = homann.josh.telsa0.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		034D3A2925C50F3200574836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = telsa_WatchKit_Extension;
+				INFOPLIST_FILE = "telsa WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = homann.josh.telsa0.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		034D3A2A25C50F3200574836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4WMJSL77G;
+				IBSC_MODULE = telsa_WatchKit_Extension;
+				INFOPLIST_FILE = "telsa WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = homann.josh.telsa0.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		034D3A2D25C50F3200574836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"telsa/Preview Content\"";
+				DEVELOPMENT_TEAM = NDC584AYVH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = telsa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = homann.josh.telsa0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		034D3A2E25C50F3200574836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"telsa/Preview Content\"";
+				DEVELOPMENT_TEAM = NDC584AYVH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = telsa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = homann.josh.telsa0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		034D3A3025C50F3200574836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4WMJSL77G;
+				INFOPLIST_FILE = telsaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = homann.josh.telsaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/telsa.app/telsa";
+			};
+			name = Debug;
+		};
+		034D3A3125C50F3200574836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4WMJSL77G;
+				INFOPLIST_FILE = telsaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = homann.josh.telsaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/telsa.app/telsa";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		034D3A3325C50F3200574836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4WMJSL77G;
+				INFOPLIST_FILE = telsaUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = homann.josh.telsaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = telsa;
+			};
+			name = Debug;
+		};
+		034D3A3425C50F3200574836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4WMJSL77G;
+				INFOPLIST_FILE = telsaUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = homann.josh.telsaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = telsa;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		034D39D625C50F3000574836 /* Build configuration list for PBXProject "telsa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034D3A2225C50F3200574836 /* Debug */,
+				034D3A2325C50F3200574836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		034D3A2425C50F3200574836 /* Build configuration list for PBXNativeTarget "telsa WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034D3A2525C50F3200574836 /* Debug */,
+				034D3A2625C50F3200574836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		034D3A2825C50F3200574836 /* Build configuration list for PBXNativeTarget "telsa WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034D3A2925C50F3200574836 /* Debug */,
+				034D3A2A25C50F3200574836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		034D3A2C25C50F3200574836 /* Build configuration list for PBXNativeTarget "telsa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034D3A2D25C50F3200574836 /* Debug */,
+				034D3A2E25C50F3200574836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		034D3A2F25C50F3200574836 /* Build configuration list for PBXNativeTarget "telsaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034D3A3025C50F3200574836 /* Debug */,
+				034D3A3125C50F3200574836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		034D3A3225C50F3200574836 /* Build configuration list for PBXNativeTarget "telsaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034D3A3325C50F3200574836 /* Debug */,
+				034D3A3425C50F3200574836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		034D3A4225C50FB100574836 /* TeslaUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TeslaUI;
+		};
+		034D3A6725C5112000574836 /* TeslaUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TeslaUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 034D39D325C50F3000574836 /* Project object */;
+}
